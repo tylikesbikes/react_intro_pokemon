@@ -9,4 +9,27 @@ const pokemonData = [
     {id: 133, name: 'Eevee',      type: 'normal',   base_experience: 65}
   ];
 
-export default pokemonData;
+
+/**
+ * takes an array of 8 pokemon and creates two random arrays of four
+ * arr => {arr1, arr2}
+ */
+function getTwoDecks(listOfItems) {
+    let randomIdx = (arr) => Math.floor(Math.random() * arr.length);
+    const out1 = [];
+    const copyOfList = [];
+    
+    for (let i of listOfItems) {
+        copyOfList.push(i);
+    }
+
+    while (out1.length < 4) {
+        let idx = randomIdx(copyOfList);
+        out1.push(copyOfList[idx]);
+        copyOfList.splice(idx,1);
+    }
+
+    return [out1, copyOfList];
+}
+
+export {pokemonData, getTwoDecks};

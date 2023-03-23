@@ -2,6 +2,7 @@
     
     width:75%;
     margin:auto;
+    border:1px solid black;
 }
 
 .pokedexHeader {
@@ -19,5 +20,13 @@
 }
 
 .pokemonCard img {
-    align-content:center;
+    margin:auto;
+}
+
+.winner {
+    background-color:green;
+}
+
+.loser {
+    background-color:pink;
 }

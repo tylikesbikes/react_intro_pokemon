@@ -1,15 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-import Pokedex from './Pokedex';
 import './pokedex.css';
-import pokemonData from './pokemonData.js';
+// import {pokemonData} from './pokemonData.js';
+import Pokegame from './Pokegame';
 
 function App() {
   return (
     <>
-      <Pokedex pokemon = {pokemonData}/>
+      <Pokegame/>
     </>
   );
-}
+};
 
 export default App;
