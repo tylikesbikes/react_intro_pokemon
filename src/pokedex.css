@@ -19,6 +19,15 @@
     margin:10px;
 }
 
+.pokemonCard:hover {
+    transition:0.5s;
+    background-color:aqua;
+}
+
+img:hover {
+    transform: scaleX(-1);
+}
+
 .pokemonCard img {
     margin:auto;
 }
